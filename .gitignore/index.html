@@ -30,9 +30,9 @@
       scene.add(new THREE.AmbientLight(0x666666));
  
       var loader = new THREE.TextureLoader();
-      var geometry = new THREE.SphereGeometry( 1, 1, 1 );
+      var geometry = new THREE.CylinderGeometry( 10, 10, 10 );
       var material = new THREE.MeshStandardMaterial ({
-        color: 0xb0c4de
+        color: 0xccffcc
         map: loader.load('HIRO95_yuubaenokage_TP_V.jpg')});
       var mesh = new THREE.Mesh( geometry, material );
       scene.add( mesh );
